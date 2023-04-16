@@ -1,6 +1,6 @@
 # The project with automation tests for the functionality of rabota.by
 
-## Contents:
+## Contents
 
 > ➠ [Technology stack](#technology-stack)
 >
@@ -18,7 +18,7 @@
 >
 > ➠ [Example of test run in Selenoid](#example-of-test-run-in-Selenoid)
 
-## Technology stack:
+## Technology stack
 
 <p align="center">
 <a href="https://www.jetbrains.com/idea/"><img src="images/logo/Idea.svg" width="50" height="50"  alt="IDEA"/></a>
@@ -50,7 +50,7 @@
 >
 > All the test results are sent to <code>Telegram</code> with the help of Bot.
 
-## Test cases:
+## Test cases
 
 - ✓ Successful search 
 - ✓ Check filter by specified income
@@ -58,12 +58,12 @@
 - ✓ Create a resume
 - ✓ Log in
 
-###  Run tests locally :
+###  Run tests locally
 Run the command in the Terminal:
 ```bash
 gradle clean test
 ```
-Inorder to get the report run the command below:
+In order to get the report run the command below:
 ```bash
 allure serve build/allure-results
 ```
