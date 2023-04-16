@@ -70,7 +70,7 @@ allure serve build/allure-results
 ```
 
 ##  Run tests via Jenkins:
-1. Open <a target="_blank" href="https://jenkins.autotests.cloud/job/017-July_Shk-jenkins_hhru/">проект</a>
+1. Open <a target="_blank" href="https://jenkins.autotests.cloud/job/018-marinka_k-projectUITests/">the project</a>
 
 ![This is an image](/images/screens/jenkins.png)
 
@@ -78,5 +78,3 @@ allure serve build/allure-results
 3. Change parameters (if it is needed).
 4. Tap on  **Buid**
 5. Check results in the Allure reports
-
-## <img src="images/logo/Allure.svg" width="25" height="25"  alt="Allure"/></a> Отчет в <a target="_blank" href="https://jenkins.autotests.cloud/job/017-July_Shk-jenkins_hhru/9/allure/">Allure report</a>
