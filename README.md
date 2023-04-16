@@ -6,7 +6,7 @@
 >
 > ➠ [Test cases](#test-cases)
 >
-> ➠ [Run tests via terminal](#run-tests-via-terminal)
+> ➠ [Run tests locally](#run-tests-via-terminal)
 >
 > ➠ [Run tests via Jenkins](#run-tests-via-Jenkins)
 >
@@ -57,3 +57,13 @@
 - ✓ Extended search
 - ✓ Create a resume
 - ✓ Log in
+
+###  Run tests locally :
+Run the command in the Terminal:
+```bash
+gradle clean test
+```
+Inorder to get the report run the command below:
+```bash
+allure serve build/allure-results
+```
