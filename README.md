@@ -52,11 +52,11 @@
 
 ## Test cases
 
-✓ Successful search 
-✓ Check filter by specified income
-✓ Extended search
-✓ Create a resume
-✓ Log in
+- ✓ Successful search 
+- ✓ Check filter by specified income
+- ✓ Extended search
+- ✓ Create a resume
+- ✓ Log in
 
 ##  Run tests locally
 
