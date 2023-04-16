@@ -8,7 +8,7 @@
 >
 > ➠ [Run tests via terminal](#run-tests-via-terminal)
 >
-> ➠ [Запуск тестов в Jenkins](#run-tests-via-Jenkins)
+> ➠ [Run tests via Jenkins](#run-tests-via-Jenkins)
 >
 > ➠ [Allure reports](#allure-reports)
 >
@@ -49,3 +49,11 @@
 > <code>Allure report</code> creates a report about test run.
 >
 > All the test results are sent to <code>Telegram</code> with the help of Bot.
+
+## :mag_right: Test cases
+
+- ✓ Successful search 
+- ✓ Check filter by specified income
+- ✓ Extended search
+- ✓ Create a resume
+- ✓ Log in
