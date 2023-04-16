@@ -14,7 +14,7 @@
 >
 > ➠ [Integration with Allure TestOps](#integration-with-allure-testOps)
 >
-> ➠ [Notifications to Telegram using a bot](#notifications-to-telegram-using-a-bot)
+> ➠ [Notifications on Telegram](#notifications-on-telegram)
 >
 > ➠ [Example of test run in Selenoid](#example-of-test-run-in-Selenoid)
 
