@@ -69,7 +69,7 @@ In order to get the report run the command below:
 allure serve build/allure-results
 ```
 
-##  Run tests via Jenkins:
+##  Run tests via Jenkins
 1. Open <a target="_blank" href="https://jenkins.autotests.cloud/job/018-marinka_k-projectUITests/">the project</a>.
 2. Choose **Build with parameters**.
 3. Change parameters (if it is needed).
