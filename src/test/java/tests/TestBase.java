@@ -19,7 +19,7 @@ public class TestBase {
     static void setUp() {
         WebDriverProvider provider = new WebDriverProvider();
     }
-    
+
     @BeforeEach
         void addListener() {
             SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
