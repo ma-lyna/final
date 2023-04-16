@@ -45,7 +45,5 @@
 > It is possible to run tests locally or with the help of <code>Jenkins</code and <code>Selenoid</code>.
 >
 > <code>Selenoid</code> is used to run browsers in <code>Docker</code> containers.
->
 > <code>Allure report</code> creates a report about test run.
->
 > All the test results are sent to <code>Telegram</code> with the help of Bot.
