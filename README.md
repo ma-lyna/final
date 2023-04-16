@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # The project with automation tests for the functionality of rabota.by
 
 ## Contents:
@@ -50,6 +49,4 @@
 > <code>Allure report</code> creates a report about test run.
 >
 > All the test results are sent to <code>Telegram</code> with the help of Bot.
-=======
-hi
->>>>>>> 337bc30 (added readme)
+
