@@ -5,11 +5,8 @@ import org.aeonbits.owner.Config;
 @Config.Sources({"classpath:${env}.properties"})
 
 public interface WebDriverConfig extends Config {
-    //зачитываем данные из командной строки
     @Key("browser")
-    // обрабатывает дефолтное значение
     @DefaultValue("CHROME")
-    // конвертируем в возращаемый тип
     String getBrowser();
 
     @Key("browserSize")
