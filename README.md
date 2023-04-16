@@ -42,7 +42,7 @@
 >
 > <code>JUnit 5</code> is used as a library for module testing.
 >
-> It is possible to run tests locally or with the help of <code>Jenkins</code and <code>Selenoid</code>.
+> It is possible to run tests locally or with the help of <code>Jenkins</code> and <code>Selenoid</code>.
 >
 > <code>Selenoid</code> is used to run browsers in <code>Docker</code> containers.
 >
