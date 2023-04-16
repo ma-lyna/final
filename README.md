@@ -59,6 +59,7 @@
 - ✓ Log in
 
 ###  Run tests locally
+
 Run the command in the Terminal:
 ```bash
 gradle clean test
