@@ -80,7 +80,7 @@ allure serve build/allure-results
 
 ## Allure reports
 
-###  The main screen
+###  Main screen
 
 <p align="center">
 <img title="Allure Overview Dashboard" src="images/screens/allure1.png">
@@ -95,19 +95,19 @@ allure serve build/allure-results
 
 ## Integration with Allure TestOps
 
-### Общий список всех кейсов: ручных и авто
+### Manual and automated tests
 <p align="center">
-<img title="Allure Graphics" src="images/screens/testops_tests.png">
+<img title="Allure Graphics" src="images/screens/testops1.png">
 </p>
 
-### Dashboard с общими результатами тестирования
+### Dashboard with results
 <p align="center">
-<img title="Allure Graphics" src="images/screens/testops_dashboard.png">
+<img title="Allure Graphics" src="images/screens/testops2.png">
 </p>
 
-### Пример отчёта выполнения одного из автотестов
+### Report related to one of the automation tests
 <p align="center">
-<img title="Allure Graphics" src="images/screens/testops_cycle.png">
+<img title="Allure Graphics" src="images/screens/testops3.png">
 </p>
 
 ## Integration with Atlassian Jira
