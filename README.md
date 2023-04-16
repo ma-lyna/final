@@ -116,5 +116,5 @@ allure serve build/allure-results
 ## Notifications on Telegram
 
 <p align="center">
-<img title="Allure Overview Dashboard" src="images/screens/telegram1.png" >
+<img title="Allure Overview Dashboard" src="images/screens/Telegram1.png" >
 </p>
