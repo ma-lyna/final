@@ -4,34 +4,28 @@ import com.codeborne.selenide.Configuration;
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import static com.codeborne.selenide.Configuration.baseUrl;
+import static com.codeborne.selenide.Selenide.open;
+
 
 public class WebDriverProvider {
 
-    private WebDriverConfig config;
+        static WebDriverConfig config = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
 
-    public WebDriverProvider() {
-        this.config = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
-        createWebDriver();
-    }
+        public static void config() {
+            baseUrl = WebDriverProvider.config.getBaseUrl();
+            open(baseUrl);
+            Configuration.browserSize = WebDriverProvider.config.getBrowserSize();
+            Configuration.browser = WebDriverProvider.config.getBrowser().toString();
+            Configuration.browserVersion = WebDriverProvider.config.getBrowserVersion();
+            String remoteUrl = WebDriverProvider.config.getRemote();
+            if (remoteUrl != null) {
+                Configuration.remote = remoteUrl;
+            }
 
-    private void createWebDriver() {
-        switch (config.getBrowser().toLowerCase()) {
-            case "chrome":
-                Configuration.browser = "chrome";
-                break;
-            case "opera":
-                Configuration.browser = "opera";
-                break;
-            default:
-                throw new RuntimeException(config.getBrowser());
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            capabilities.setCapability("enableVNC", true);
+            capabilities.setCapability("enableVideo", true);
+            Configuration.browserCapabilities = capabilities;
         }
-
-        Configuration.browserVersion = config.getBrowserVersion();
-        Configuration.browserSize = config.getBrowserSize();
-        Configuration.remote = config.getRemote();
-
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("enableVNC", true);
-        capabilities.setCapability("enableVideo", true);
-    }
 }

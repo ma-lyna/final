@@ -20,11 +20,6 @@ public class RabotaByPage {
                 logInBtn = $(byText("Войти")),
                 logInPageTitle = $(".bloko-header-section-2");
 
-        public RabotaByPage openPage() {
-            open("https://rabota.by");
-
-            return this;
-        }
 
         public RabotaByPage fillInSearchField (String value) {
         searchInput.setValue(value);
