@@ -70,11 +70,8 @@ allure serve build/allure-results
 ```
 
 ##  Run tests via Jenkins:
-1. Open <a target="_blank" href="https://jenkins.autotests.cloud/job/018-marinka_k-projectUITests/">the project</a>
-
-![This is an image](/images/screens/jenkins.png)
-
+1. Open <a target="_blank" href="https://jenkins.autotests.cloud/job/018-marinka_k-projectUITests/">the project</a
 2. Choose **Build with parameters**
 3. Change parameters (if it is needed).
-4. Tap on  **Buid**
+4. Tap on  **Build**
 5. Check results in the Allure reports
