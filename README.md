@@ -50,7 +50,7 @@
 >
 > All the test results are sent to <code>Telegram</code> with the help of Bot.
 
-## :mag_right: Test cases
+## Test cases:
 
 - ✓ Successful search 
 - ✓ Check filter by specified income
