@@ -2,7 +2,7 @@
 
 ## Contents:
 
-> ➠ [Technology stack](#technology-stack.)
+> ➠ [Technology stack](#technology-stack)
 >
 > ➠ [Test cases](#test-cases)
 >
