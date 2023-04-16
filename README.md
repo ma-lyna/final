@@ -6,7 +6,7 @@
 >
 > ➠ [Test cases](#test-cases)
 >
-> ➠ [Run tests locally](#run-tests-via-terminal)
+> ➠ [Run tests locally](#run-tests-locally)
 >
 > ➠ [Run tests via Jenkins](#run-tests-via-Jenkins)
 >
@@ -58,7 +58,7 @@
 - ✓ Create a resume
 - ✓ Log in
 
-###  Run tests locally
+##  Run tests locally
 
 Run the command in the Terminal:
 ```bash
