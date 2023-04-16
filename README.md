@@ -17,8 +17,6 @@
 > ➠ [Integration with Atlassian Jira](#integration-with-atlassian-jira)
 >
 > ➠ [Notifications on Telegram](#notifications-on-telegram)
->
-> ➠ [Example of test run in Selenoid](#example-of-test-run-in-Selenoid)
 
 ## Technology stack
 
@@ -112,17 +110,11 @@ allure serve build/allure-results
 
 ## Integration with Atlassian Jira
 <p align="center">
-<img title="Jira" src="images/screens/jira.png">
+<img title="Jira" src="images/screens/jira1.png">
 </p>
 
 ## Notifications on Telegram
 
 <p align="center">
-<img title="Allure Overview Dashboard" src="images/screens/telegram.png" >
-</p>
-
-## <img src="images/logo/Selenoid.svg" width="25" height="25"  alt="Allure"/></a> Видео прохождения тестов
-
-<p align="center">
-  <img title="Selenoid Video" src="images/video_selenide/videoSelenide.gif">
+<img title="Allure Overview Dashboard" src="images/screens/telegram1.png" >
 </p>
