@@ -80,16 +80,16 @@ allure serve build/allure-results
 
 ## Allure reports
 
-###  Главное окно
+###  The main screen
 
 <p align="center">
-<img title="Allure Overview Dashboard" src="images/screens/allure.png">
+<img title="Allure Overview Dashboard" src="images/screens/allure1.png">
 </p>
 
-###  Тесты
+###  Tests
 
 <p align="center">
-<img title="Allure Tests" src="images/screens/allure_2.png">
+<img title="Allure Tests" src="images/screens/allure2.png">
 </p>
 
 
