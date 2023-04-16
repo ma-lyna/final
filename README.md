@@ -14,6 +14,8 @@
 >
 > ➠ [Integration with Allure TestOps](#integration-with-allure-testOps)
 >
+> ➠ [Integration with Atlassian Jira](#integration-with-atlassian-jira)
+>
 > ➠ [Notifications on Telegram](#notifications-on-telegram)
 >
 > ➠ [Example of test run in Selenoid](#example-of-test-run-in-Selenoid)
@@ -76,6 +78,8 @@ allure serve build/allure-results
 4. Tap on  **Build**.
 5. Check results in the Allure reports.
 
+## Allure reports
+
 ###  Главное окно
 
 <p align="center">
@@ -89,7 +93,8 @@ allure serve build/allure-results
 </p>
 
 
-## <img src="images/logo/Allure_TO.svg" width="25" height="25"  alt="Allure"/></a> Интеграция с <a target="_blank" href="https://allure.autotests.cloud/launch/19330">Allure TestOps</a>
+## Integration with Allure TestOps
+
 ### Общий список всех кейсов: ручных и авто
 <p align="center">
 <img title="Allure Graphics" src="images/screens/testops_tests.png">
@@ -105,12 +110,12 @@ allure serve build/allure-results
 <img title="Allure Graphics" src="images/screens/testops_cycle.png">
 </p>
 
-## <img src="images/logo/jira-logo.svg" width="25" height="25"  alt="Allure"/></a> Интеграция с <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-546">Atlassian Jira</a>
+## Integration with Atlassian Jira
 <p align="center">
 <img title="Jira" src="images/screens/jira.png">
 </p>
 
-## <img src="images/logo/Telegram.svg" width="25" height="25"  alt="Allure"/></a> Уведомление в Telegram о результатах прогона тестов
+## Notifications on Telegram
 
 <p align="center">
 <img title="Allure Overview Dashboard" src="images/screens/telegram.png" >
