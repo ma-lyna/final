@@ -8,7 +8,7 @@
 >
 > ➠ [Run tests via terminal](#run-tests-via-terminal)
 >
-> ➠ [Запуск тестов в Jenkins](#run-tests-via-Jenkins)
+> ➠ [Run tests via Jenkins](#run-tests-via-Jenkins)
 >
 > ➠ [Allure reports](#allure-reports)
 >
