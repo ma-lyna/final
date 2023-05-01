@@ -17,12 +17,12 @@ public class TestBase {
     @BeforeAll
     static void setUp() {
         WebDriverProvider.config();
-        open("https://rabota.by/");
     }
 
     @BeforeEach
         void addListener() {
             SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
+        open("https://rabota.by/");
         }
 
         @AfterEach
