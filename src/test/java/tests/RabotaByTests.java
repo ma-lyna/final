@@ -15,35 +15,9 @@ public class RabotaByTests extends TestBase {
     RabotaByPage rabotaByPage = new RabotaByPage();
 
     @Test
-    @Severity(SeverityLevel.BLOCKER)
+    @Severity(SeverityLevel.NORMAL)
     @Owner("ma-lyna")
-    @DisplayName("Check the possibility to create a resume")
-    void checkCreationResume() {
-        step("Tap on the 'Создать резюме' button'", () -> {
-            rabotaByPage.tapOnCreateCv();
-        });
-        step("Verify the page for creation a resume is opened", () -> {
-            rabotaByPage.checkPageCreateCv();
-        });
-    }
-
-    @Test
-    @Severity(SeverityLevel.BLOCKER)
-    @Owner("ma-lyna")
-    @DisplayName("Check the possibility to log in")
-    void checkLogIn() {
-        step("Tap on the 'Войти' button'", () -> {
-            rabotaByPage.tapOnLogIn();
-        });
-        step("Verify login page is opened", () -> {
-            rabotaByPage.checkPageLogIn();
-        });
-    }
-
-    @Test
-    @Severity(SeverityLevel.BLOCKER)
-    @Owner("ma-lyna")
-    @DisplayName("Successful search")
+    @DisplayName("Displaying of 'QA' results after successful search")
     void checkSuccessfulSearch() {
         step("Fill in the 'Search' field with 'QA'", () -> {
             rabotaByPage.fillInSearchField("QA");
@@ -51,7 +25,7 @@ public class RabotaByTests extends TestBase {
         step("Tap on the 'Найти работу' button'", () -> {
             rabotaByPage.tapToSearch();
         });
-        step("Verify that search results for 'QA' are shown", () -> {
+        step("Verify existence of 'QA' in the title of search results", () -> {
             rabotaByPage.checkSearchResults();
         });
     }
@@ -78,13 +52,39 @@ public class RabotaByTests extends TestBase {
     @Test
     @Severity(SeverityLevel.CRITICAL)
     @Owner("ma-lyna")
-    @DisplayName("Extended search")
+    @DisplayName("Check existence of 'Поиск вакансий' on the page after tapping on 'Extended search'")
     void checkJobsInSpecifiedCity() {
         step("Tap on the 'Расширенный поиск' button'", () -> {
             rabotaByPage.tapOnExtSearch();
         });
         step("Verify the page with extended search is opened", () -> {
             rabotaByPage.checkPageExtSearch();
+        });
+    }
+
+    @Test
+    @Severity(SeverityLevel.BLOCKER)
+    @Owner("ma-lyna")
+    @DisplayName("Check the possibility to create a resume")
+    void checkCreationResume() {
+        step("Tap on the 'Создать резюме' button'", () -> {
+            rabotaByPage.tapOnCreateCv();
+        });
+        step("Verify the page for creation a resume is opened", () -> {
+            rabotaByPage.checkPageCreateCv();
+        });
+    }
+
+    @Test
+    @Severity(SeverityLevel.BLOCKER)
+    @Owner("ma-lyna")
+    @DisplayName("Check the possibility to log in")
+    void checkLogIn() {
+        step("Tap on the 'Войти' button'", () -> {
+            rabotaByPage.tapOnLogIn();
+        });
+        step("Verify login page is opened", () -> {
+            rabotaByPage.checkPageLogIn();
         });
     }
 }
