@@ -17,9 +17,6 @@ public class TestBase {
     @BeforeAll
     static void setUp() {
         WebDriverProvider.config();
-    }
-    @BeforeAll
-    static void openBaseurl() {
         open("https://rabota.by/");
     }
 
