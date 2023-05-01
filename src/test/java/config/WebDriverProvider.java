@@ -14,7 +14,7 @@ public class WebDriverProvider {
 
         public static void config() {
             baseUrl = WebDriverProvider.config.getBaseUrl();
-            open(baseUrl);
+        //    open(baseUrl);
             Configuration.browserSize = WebDriverProvider.config.getBrowserSize();
             Configuration.browser = WebDriverProvider.config.getBrowser().toString();
             Configuration.browserVersion = WebDriverProvider.config.getBrowserVersion();
