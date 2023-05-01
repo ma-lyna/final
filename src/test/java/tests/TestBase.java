@@ -20,7 +20,7 @@ public class TestBase {
     }
     @BeforeAll
     static void openBaseurl() {
-        open("https://rabota.by");
+        open("https://rabota.by/");
     }
 
     @BeforeEach

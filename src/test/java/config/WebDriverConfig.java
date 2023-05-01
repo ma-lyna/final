@@ -9,7 +9,7 @@ import org.aeonbits.owner.Config;
 public interface WebDriverConfig extends Config {
 
         @Key("baseUrl")
-        @DefaultValue("https://rabota.by")
+        @DefaultValue("https://rabota.by/")
         String getBaseUrl();
 
         @Key("remoteUrl")
