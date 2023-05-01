@@ -19,9 +19,6 @@ public class RabotaByTests extends TestBase {
     @Owner("ma-lyna")
     @DisplayName("Successful search")
     void checkSuccessfulSearch() {
-        step("Open 'rabota.by'", () -> {
-           rabotaByPage.openPage();
-        });
         step("Fill in the 'Search' field with 'QA'", () -> {
             rabotaByPage.fillInSearchField("QA");
         });
@@ -38,9 +35,6 @@ public class RabotaByTests extends TestBase {
     @Owner("ma-lyna")
     @DisplayName("Check filter by specified income")
     void checkJobsWithSpecifiedIncome() {
-        step("Open 'rabota.by'", () -> {
-            rabotaByPage.openPage();
-        });
         step("Fill in the 'Search' field with 'QA'", () -> {
             rabotaByPage.fillInSearchField("QA");
         });
@@ -60,9 +54,6 @@ public class RabotaByTests extends TestBase {
     @Owner("ma-lyna")
     @DisplayName("Extended search")
     void checkJobsInSpecifiedCity() {
-        step("Open 'rabota.by'", () -> {
-            rabotaByPage.openPage();
-        });
         step("Tap on the 'Расширенный поиск' button'", () -> {
             rabotaByPage.tapOnExtSearch();
         });
@@ -76,9 +67,6 @@ public class RabotaByTests extends TestBase {
     @Owner("ma-lyna")
     @DisplayName("Check the possibility to create a resume")
     void checkCreationResume() {
-        step("Open 'rabota.by'", () -> {
-          rabotaByPage.openPage();
-        });
         step("Tap on the 'Создать резюме' button'", () -> {
             rabotaByPage.tapOnCreateCv();
         });
@@ -92,9 +80,6 @@ public class RabotaByTests extends TestBase {
     @Owner("ma-lyna")
     @DisplayName("Check the possibility to log in")
     void checkLogIn() {
-       step("Open 'rabota.by'", () -> {
-            rabotaByPage.openPage();
-        });
         step("Tap on the 'Войти' button'", () -> {
             rabotaByPage.tapOnLogIn();
         });
