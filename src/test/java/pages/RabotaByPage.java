@@ -49,7 +49,7 @@ public class RabotaByPage {
     }
 
         public RabotaByPage checkSpecifiedExp () {
-        specifiedExpRb.click();
+        specifiedExpRb.scrollTo().click();
 
         return this;
     }
