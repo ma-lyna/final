@@ -2,17 +2,20 @@ package pages;
 
 import com.codeborne.selenide.SelenideElement;
 
-import static com.codeborne.selenide.Condition.*;
+import static com.codeborne.selenide.Condition.exist;
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selectors.withText;
+import static com.codeborne.selenide.Selenide.$;
 
 public class RabotaByPage {
         private SelenideElement
                 searchInput = $("#a11y-search-input"),
                 searchBtn = $(byText("Найти работу")),
-                searchResults = $(".bloko-header-section-3"),
-                specifiedIncomeChbox = $(".bloko-checkbox"),
-                specifiedIncome = $("div span"),
+                searchResults = $(".vacancy-serp-item__layout"),
+                qaResult = $(".bloko-header-section-3"),
+                specifiedExpRb = $(".nova-control--GtG8Kpo7kAMGijnRbxtY:nth-child(19)").$(withText("От 1 года до 3 лет")),
+                specifiedExp = $(".vacancy-serp-content .vacancy-serp-item__layout"),
                 extSearchBtn = $(".supernova-navi-advanced-search-icon"),
                 extPageTitle = $(".bloko-header-1"),
                 createCvBtn = $(byText("Создать резюме")),
@@ -34,18 +37,24 @@ public class RabotaByPage {
     }
 
         public RabotaByPage checkSearchResults () {
-        searchResults.shouldHave(text("QA"));
+        searchResults.should(exist);
 
         return this;
     }
 
-        public RabotaByPage checkSpecifiedIncome () {
-        specifiedIncomeChbox.click();
+        public RabotaByPage checkQaResult () {
+        qaResult.shouldHave(text("QA"));
 
         return this;
     }
-        public RabotaByPage verifySpecifiedIncomeExist () {
-        specifiedIncome.should(exist);
+
+        public RabotaByPage checkSpecifiedExp () {
+        specifiedExpRb.click();
+
+        return this;
+    }
+        public RabotaByPage verifySpecifiedExpExist () {
+        specifiedExp.shouldHave(text("От 1 года до 3 лет"));
 
         return this;
     }

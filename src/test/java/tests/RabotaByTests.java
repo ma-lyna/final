@@ -15,7 +15,7 @@ public class RabotaByTests extends TestBase {
     RabotaByPage rabotaByPage = new RabotaByPage();
 
     @Test
-    @Severity(SeverityLevel.NORMAL)
+    @Severity(SeverityLevel.BLOCKER)
     @Owner("ma-lyna")
     @DisplayName("Displaying of 'QA' results after successful search")
     void checkSuccessfulSearch() {
@@ -25,28 +25,31 @@ public class RabotaByTests extends TestBase {
         step("Tap on the 'Найти работу' button'", () -> {
             rabotaByPage.tapToSearch();
         });
-        step("Verify existence of 'QA' in the title of search results", () -> {
+        step("Check displaying of results after search", () -> {
             rabotaByPage.checkSearchResults();
+        });
+        step("Verify the displayed result is 'QA' result", () -> {
+            rabotaByPage.checkQaResult();
         });
     }
 
     @Test
-    @Severity(SeverityLevel.NORMAL)
+    @Severity(SeverityLevel.CRITICAL)
     @Owner("ma-lyna")
-    @DisplayName("Check filter by specified income")
-    void checkJobsWithSpecifiedIncome() {
+    @DisplayName("Check filter by experience from 1 to 3 years")
+    void checkJobsWithOneAndThreeExp() {
         step("Fill in the 'Search' field with 'QA'", () -> {
             rabotaByPage.fillInSearchField("QA");
         });
         step("Tap on the 'Найти работу' button'", () -> {
             rabotaByPage.tapToSearch();
         });
-        step("Check 'Указан доход' checkbox", () -> {
-            rabotaByPage.checkSpecifiedIncome();
+        step("Choose the filter 'from 1 to 3 years of experience' ", () -> {
+            rabotaByPage.checkSpecifiedExp();
         });
-        step("Verify search results are displayed according to 'Указан доход' checkbox", () -> {
-            rabotaByPage.verifySpecifiedIncomeExist();
-        });
+        step("Verify the positions with experience from 1 to 3 years are displayed", () -> {
+            rabotaByPage.verifySpecifiedExpExist();
+         });
         }
 
     @Test
