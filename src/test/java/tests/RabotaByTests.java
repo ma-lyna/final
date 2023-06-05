@@ -47,9 +47,9 @@ public class RabotaByTests extends TestBase {
         step("Choose the filter 'from 1 to 3 years of experience' ", () -> {
             rabotaByPage.checkSpecifiedExp();
         });
-        step("Verify the positions with experience from 1 to 3 years are displayed", () -> {
-            rabotaByPage.verifySpecifiedExpExist();
-         });
+     step("Verify the positions with experience from 1 to 3 years are displayed", () -> {
+       rabotaByPage.verifySpecifiedExpExist();
+       });
         }
 
     @Test

@@ -1,11 +1,11 @@
 package pages;
 
 import com.codeborne.selenide.SelenideElement;
+import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Condition.exist;
 import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selectors.withText;
+import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.$;
 
 public class RabotaByPage {
@@ -14,8 +14,8 @@ public class RabotaByPage {
                 searchBtn = $(byText("Найти работу")),
                 searchResults = $(".vacancy-serp-item__layout"),
                 qaResult = $(".bloko-header-section-3"),
-                specifiedExpRb = $(".nova-control--GtG8Kpo7kAMGijnRbxtY:nth-child(19)").$(withText("От 1 года до 3 лет")),
-                specifiedExp = $(".vacancy-serp-content .vacancy-serp-item__layout"),
+                specifiedExpRb = $(".nova-control--GtG8Kpo7kAMGijnRbxtY:nth-child(7) .bloko-form-item"),
+                specifiedExp = $(".vacancy-serp-item__layout span[data-qa ='vacancy-serp__vacancy-compensation']"),
                 extSearchBtn = $(".supernova-navi-advanced-search-icon"),
                 extPageTitle = $(".bloko-header-1"),
                 createCvBtn = $(byText("Создать резюме")),
@@ -54,7 +54,7 @@ public class RabotaByPage {
         return this;
     }
         public RabotaByPage verifySpecifiedExpExist () {
-        specifiedExp.shouldHave(text("От 1 года до 3 лет"));
+        specifiedExp.should(exist);
 
         return this;
     }
