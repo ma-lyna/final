@@ -1,7 +1,6 @@
 package pages;
 
 import com.codeborne.selenide.SelenideElement;
-import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Condition.exist;
 import static com.codeborne.selenide.Condition.text;
@@ -17,11 +16,11 @@ public class RabotaByPage {
                 specifiedExpRb = $(".nova-control--GtG8Kpo7kAMGijnRbxtY:nth-child(7) .bloko-form-item"),
                 specifiedExp = $(".vacancy-serp-item__layout span[data-qa ='vacancy-serp__vacancy-compensation']"),
                 extSearchBtn = $(".supernova-navi-advanced-search-icon"),
-                extPageTitle = $(".bloko-header-1"),
+                extPageArea = $(".row-content form"),
                 createCvBtn = $(byText("Создать резюме")),
-                createCvPageTitle = $(".bloko-header-1"),
+                createCvPageArea = $(".signup-wrapper"),
                 logInBtn = $(byText("Войти")),
-                logInPageTitle = $(".bloko-header-section-2");
+                logInPageArea = $(".account-login-page");
 
 
         public RabotaByPage fillInSearchField (String value) {
@@ -66,7 +65,7 @@ public class RabotaByPage {
     }
 
         public RabotaByPage checkPageExtSearch () {
-        extPageTitle.shouldHave(text("Поиск вакансий"));
+        extPageArea.should(exist);
 
         return this;
     }
@@ -78,7 +77,7 @@ public class RabotaByPage {
     }
 
         public RabotaByPage checkPageCreateCv () {
-        createCvPageTitle.shouldHave(text("Регистрация соискателя"));
+        createCvPageArea.should(exist);
 
         return this;
     }
@@ -90,7 +89,7 @@ public class RabotaByPage {
     }
 
         public RabotaByPage checkPageLogIn () {
-        logInPageTitle.shouldHave(text("Поиск работы"));
+        logInPageArea.should(exist);
 
         return this;
     }

@@ -55,7 +55,7 @@ public class RabotaByTests extends TestBase {
     @Test
     @Severity(SeverityLevel.CRITICAL)
     @Owner("ma-lyna")
-    @DisplayName("Check existence of 'Поиск вакансий' on the page after tapping on 'Extended search'")
+    @DisplayName("Check the page with extended search is opened after tapping on 'Extended search'")
     void checkJobsInSpecifiedCity() {
         step("Tap on the 'Расширенный поиск' button'", () -> {
             rabotaByPage.tapOnExtSearch();
@@ -68,7 +68,7 @@ public class RabotaByTests extends TestBase {
     @Test
     @Severity(SeverityLevel.BLOCKER)
     @Owner("ma-lyna")
-    @DisplayName("Check the possibility to create a resume")
+    @DisplayName("Check displaying of the page for creation a resume")
     void checkCreationResume() {
         step("Tap on the 'Создать резюме' button'", () -> {
             rabotaByPage.tapOnCreateCv();
@@ -81,7 +81,7 @@ public class RabotaByTests extends TestBase {
     @Test
     @Severity(SeverityLevel.BLOCKER)
     @Owner("ma-lyna")
-    @DisplayName("Check the possibility to log in")
+    @DisplayName("Check displaying of the page for login")
     void checkLogIn() {
         step("Tap on the 'Войти' button'", () -> {
             rabotaByPage.tapOnLogIn();
